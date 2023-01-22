@@ -20,3 +20,8 @@ def test_price_on_sunday():
 
 def test_compesation():
     assert compensation() == 0.176
+
+
+def test_price_on_holiday():
+    holiday = datetime(2023, 1, 6, 16, 57, 0)
+    assert price(holiday) == 0.284556
